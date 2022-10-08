@@ -12,18 +12,18 @@ This project will involve use of Django and React.
 Using the figma.com, I created the basic wireframes how the pages will look like
 
 User will first face the login page
-![Login Page]()
+![Login Page](https://github.com/Tiranoe/adventureTime/blob/main/assets/loginpage.png?raw=true)
 
 User will have home page with list of all other's user's posts
-![Home page]()
+![Home page](https://github.com/Tiranoe/adventureTime/blob/main/assets/homepage.png?raw=true)
 
 User will be able to click on each post to show each detailed page of the post
-![Detail page]()
+![Detail page](https://github.com/Tiranoe/adventureTime/blob/main/assets/detailpage.png?raw=true)
 
 # ERG
 This is one to many Relationships. App will have different components
 User(Login), Home, Postslist, Detailpage, Footer.
-![ERG Diagram]()
+![ERG Diagram](https://github.com/Tiranoe/adventureTime/blob/main/assets/ERG%20Diagram.png?raw=true)
 
 # Milestones
 
