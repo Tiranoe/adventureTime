@@ -21,8 +21,9 @@ User will be able to click on each post to show each detailed page of the post
 ![Detail page](https://github.com/Tiranoe/adventureTime/blob/main/assets/detailpage.png?raw=true)
 
 # ERG
-This is one to many Relationships. App will have different components
-User(Login), Home, Postslist, Detailpage, Footer.
+This is one to many Relationships. 
+App will have different components: 
+- User(Login), Home, Postslist, Detailpage, Footer.
 ![ERG Diagram](https://github.com/Tiranoe/adventureTime/blob/main/assets/ERG%20Diagram.png?raw=true)
 
 # Milestones
