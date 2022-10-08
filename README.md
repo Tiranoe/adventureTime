@@ -11,14 +11,21 @@ This project will involve use of Django and React.
 ## Wireframe
 Using the figma.com, I created the basic wireframes how the pages will look like
 
+
 User will first face the login page
 ![Login Page](https://github.com/Tiranoe/adventureTime/blob/main/assets/loginpage.png?raw=true)
+
+
 
 User will have home page with list of all other's user's posts
 ![Home page](https://github.com/Tiranoe/adventureTime/blob/main/assets/homepage.png?raw=true)
 
+
+
 User will be able to click on each post to show each detailed page of the post
 ![Detail page](https://github.com/Tiranoe/adventureTime/blob/main/assets/detailpage.png?raw=true)
+
+
 
 # ERG
 This is one to many Relationships. 
@@ -38,8 +45,8 @@ App will have different components:
 
 
 ## Stretch Features
--Include a google map to display on the details page
--Use a public API to add into the amount of displayed data
--Mobile friendly design in CSS
--Search function by word in post's title
--User uploads pictures to their posts
+- Include a google map to display on the details page
+- Use a public API to add into the amount of displayed data
+- Mobile friendly design in CSS
+- Search function by word in post's title
+- User uploads pictures to their posts
