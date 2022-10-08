@@ -6,6 +6,7 @@ Welcome to Adventure Time Application! Are you the one who despises having to se
 (This is blank for now until the application is hosted)
 
 # Planning phase:
+## Toolbox:
 This project will involve use of Django and React.
 
 ## Wireframe
