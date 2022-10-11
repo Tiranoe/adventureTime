@@ -2,7 +2,7 @@
 {% block title %}Posts{% endblock %}
 {% block content %}
 
-<h1 class="title pt-5">Current Posts</h1>
+<h1 class="title pt-5">{{header}}</h1>
 
 <form class="mb-5" method="get">
   <div class="field has-addons">
@@ -11,11 +11,10 @@
       <input class="input" type="text" name="name" placeholder="name" />
     </div>
     <div class="control">
-      <input class="button is-success" type="submit" value="Search" />
+      <input class="button" type="submit" value="Search" />
+      <a class="button is-dark" href="{% url 'post_list' %}">Clear Search</a>
     </div>
   </div>
-  <!--  This anchor tag will redirect back to artist list without a query param -->
-  <a class="button is-dark" href="{% url 'post_list' %}">Clear Search</a>
 </form>
 
 <div class="gallery">
