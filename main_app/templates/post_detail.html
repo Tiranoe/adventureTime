@@ -27,6 +27,29 @@
             </span>
         </a>
     </div>
+
+<!-- inside container -->
+<div class="detail__attractions mb-5">
+    <h3 class="title is-3">Attractions</h3>
+
+    {% for attraction in post.attractions.all %}
+        <div class="attraction">
+            <span>{{forloop.counter}}</span>
+            <span><b>{{attraction.thingstodo}}</b></span>
+            <span><b>{{attraction.placestovisit}}</b></span>
+            <span>{{attraction.userrating}}</span>
+        </div>
+    {% empty %}
+        <article class="message">
+            <div class="message-header">
+                <p>No Attractions Available</p>
+            </div>
+        </article>
+
+    {% endfor %}
+</div>
+<!--  above about section  -->
+
     <div class="detail__about">
         <h4 class="title is-4">About</h4>
         <p>{{post.description}}</p>

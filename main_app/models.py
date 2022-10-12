@@ -13,6 +13,18 @@ class Post(models.Model):
     
     def __str__(self):
         return self.name
-
     class Meta:
         ordering = ['name']
+
+
+class Attractions(models.Model):
+
+    thingstodo = models.CharField(max_length=150)
+    placestovisit = models.CharField(max_length=150)
+    userrating = models.IntegerField(default=0)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="attractions")
+
+    def __str__(self):
+        return self.thingstodo
+    def __str__(self):
+        return self.placestovisit
