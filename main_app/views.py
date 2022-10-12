@@ -1,8 +1,9 @@
 from django.shortcuts import render
-from django.views import View 
+from django.urls import reverse
 # this handles viewing class to handle requests
 from django.views.generic.base import TemplateView
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView
+from django.views.generic import DetailView
 # import models
 from .models import Post
 
@@ -28,8 +29,20 @@ class PostList(TemplateView):
             context["header"] = f"Searching for {name}"
         return context
 
-class PostCreate(TemplateView):
+class PostCreate(CreateView):
     model = Post
-    fields = ['name', 'location', 'image', 'currency', 'description', 'highly-recommended']
+    fields = ['name', 'location', 'image', 'currency', 'description', 'highly_recommended']
     template_name = "post_create.html"
-    success_irl = "/posts/"
+    def get_success_url(self):
+        return reverse('post_detail', kwargs={'pk': self.object.pk})
+
+class PostDetail(DetailView):
+    model = Post
+    template_name = "post_detail.html"
+
+class PostUpdate(UpdateView):
+    model = Post
+    fields = ['name', 'location', 'image', 'currency', 'description', 'highly_recommended']
+    template_name = "post_update.html"
+    def get_success_url(self):
+        return reverse('post_detail', kwargs={'pk': self.object.pk})
