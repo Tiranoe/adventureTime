@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.urls import reverse
 # this handles viewing class to handle requests
 from django.views.generic.base import TemplateView
-from django.views.generic.edit import CreateView, UpdateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic import DetailView
 # import models
 from .models import Post
@@ -46,3 +46,8 @@ class PostUpdate(UpdateView):
     template_name = "post_update.html"
     def get_success_url(self):
         return reverse('post_detail', kwargs={'pk': self.object.pk})
+
+class PostDelete(DeleteView):
+    model = Post
+    template_name = "post_delete_confirmation.html"
+    success_url = "/posts/"
