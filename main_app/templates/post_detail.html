@@ -31,13 +31,16 @@
 <!-- inside container -->
 <div class="detail__attractions mb-5">
     <h3 class="title is-3">Attractions</h3>
-
+    <div class="attraction-title">
+    <span><b> What did you do?</b>
+    </span><span><b>Where did you go?</b></span>
+    <span><b>How was the experience?</b></span>
+</div>
     {% for attraction in post.attractions.all %}
         <div class="attraction">
-            <span>{{forloop.counter}}</span>
-            <span><b>What to do? </b>{{attraction.thingstodo}}</span>
-            <span><b>Where did you go? </b>{{attraction.placestovisit}}</span>
-            <span><b>How was the experience? </b>{{attraction.userrating}}/10</span>
+            <span>• {{attraction.thingstodo}}</span>
+            <span> {{attraction.placestovisit}}</span>
+            <span> {{attraction.userrating}}/10</span>
         </div>
     {% empty %}
         <article class="message">

@@ -93,7 +93,7 @@ p {
     flex-direction: column;
 }
 
-.attraction {
+.attraction, .attraction-title {
     width: 100%;
     padding: 10px;
     display: grid;
