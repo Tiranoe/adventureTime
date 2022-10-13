@@ -51,6 +51,45 @@
 
     {% endfor %}
 </div>
+
+<form class="mb-5" action="{% url 'attraction_create' post.pk %}" method="post">
+    {% csrf_token %}
+    <div class="field has-addons">
+        <div class="control">
+            <input
+                class="input"
+                type="text"
+                name="thingstodo"
+                placeholder="Things To Do"
+                required
+            />
+        </div>
+        <div class="control">
+            <input
+                class="input"
+                type="text"
+                name="placestovisit"
+                placeholder="Place To Visit"
+                required
+            />
+        </div>
+        <div class="control">
+            <input
+                class="input"
+                type="number"
+                name="userrating"
+                placeholder="User Ratings"
+                min="0"
+                max="10"
+                required
+            />
+        </div>
+        <div class="control">
+            <input class="button is-success" type="submit" value="Add Attraction" />
+        </div>
+    </div>
+</form>
+
 <!--  above about section  -->
 
     <div class="detail__about">

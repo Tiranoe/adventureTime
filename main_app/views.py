@@ -1,11 +1,12 @@
-from django.shortcuts import render
+from django.shortcuts import redirect
+from django.views import View
 from django.urls import reverse
 # this handles viewing class to handle requests
 from django.views.generic.base import TemplateView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic import DetailView
 # import models
-from .models import Post
+from .models import Post, Attractions
 
 
 
@@ -51,3 +52,12 @@ class PostDelete(DeleteView):
     model = Post
     template_name = "post_delete_confirmation.html"
     success_url = "/posts/"
+
+class AttractionCreate(View):
+    def post(self, request, pk):
+        thingstodo = request.POST.get("thingstodo")
+        placestovisit = request.POST.get("placestovisit")
+        userrating = request.POST.get("userrating")
+        post = Post.objects.get(pk=pk)
+        Attractions.objects.create(thingstodo=thingstodo, placestovisit=placestovisit, userrating=userrating, post=post)
+        return redirect('post_detail', pk=pk)
