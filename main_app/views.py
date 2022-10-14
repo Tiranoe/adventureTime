@@ -1,4 +1,6 @@
-from django.shortcuts import redirect
+from django.contrib.auth import login
+from django.contrib.auth.forms import UserCreationForm
+from django.shortcuts import redirect, render
 from django.views import View
 from django.urls import reverse
 # this handles viewing class to handle requests
@@ -74,3 +76,20 @@ class AttractionCreate(View):
         post = Post.objects.get(pk=pk)
         Attractions.objects.create(thingstodo=thingstodo, placestovisit=placestovisit, userrating=userrating, post=post)
         return redirect('post_detail', pk=pk)
+
+
+class Signup(View):
+    def get(self, request):
+        form = UserCreationForm()
+        context = {"form": form}
+        return render(request, "registration/signup.html", context)
+
+    def post(self, request):
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)
+            return redirect("post_list")
+        else:
+            context = {"form": form}
+            return render(request, "registration/signup.html", context)
