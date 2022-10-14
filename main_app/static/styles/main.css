@@ -1,5 +1,5 @@
 body {
-    background-color: #121212;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     color: #ffffff;
     min-height: 100vh;
   }
@@ -24,7 +24,7 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: repeat(auto-fit, minmax(280px, 1fr));
     justify-content: center;
-    row-gap: 30px;
+    row-gap: 100px;
   }
   
   .gallery .card {
@@ -52,7 +52,7 @@ body {
   
   .detail__img::after {
     content: "";
-    background-image: linear-gradient(transparent 60%, #1f1f1f);
+    background-image: linear-gradient(transparent 90%, #1f1f1f);
     position: absolute;
     top: 0;
     left: 0;
