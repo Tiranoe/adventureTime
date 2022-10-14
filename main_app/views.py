@@ -9,6 +9,9 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic import DetailView
 # import models
 from .models import Post, Attractions
+# Auth
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 
 
@@ -16,9 +19,12 @@ from .models import Post, Attractions
 class Home(TemplateView):
     template_name = "home.html"
 
+
 class About(TemplateView):
     template_name = "about.html"
 
+
+@method_decorator(login_required, name='dispatch')
 class PostList(TemplateView):
     template_name = "post_list.html"
 
