@@ -1,7 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Welcome to your travel planner!</h1>
-<h1>This app is called Adventure Time</h1>
-<h1>This app is for people who wants a community to share their UNIQUE vacation experiences with others</h1>
+<h1 class="title">Welcome to your travel planner!</h1>
+<h1 class="title">This app is called Adventure Time</h1>
+<h1 class="title">This app is for people who wants a community to share their UNIQUE vacation experiences with others</h1>
+
+<form method="post" action="{% url 'login' %}">
+    {% csrf_token %} {{ form.as_p }}
+    <input type="submit" class="btn" value="login" width="100%"/>
+    <input type="hidden" name="next" value="{{ next }}" />
+</form>
+
 {% endblock %}
 
