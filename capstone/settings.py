@@ -135,3 +135,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR,'main_app/static')]
 # Add this variable to specify where successful logins should redirect to
 LOGIN_REDIRECT_URL = '/posts/'
 LOGOUT_REDIRECT_URL = '/'
+
+# Heroku deployment.
+import django_heroku
+django_heroku.settings(locals())
