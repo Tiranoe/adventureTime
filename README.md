@@ -7,7 +7,7 @@ Welcome to Adventure Time Application! Are you the one who despises having to se
 
 # Planning phase:
 ## Toolbox:
-This project will involve use of Django and React.
+This project will be a full stack Django application. Will be trying to refactor with React front-end as well after completing the Django full stack portion.
 
 ## Wireframe
 Using the figma.com, I created the basic wireframes how the pages will look like
@@ -31,23 +31,23 @@ User will be able to click on each post to show each detailed page of the post
 # ERG
 This is one to many Relationships. 
 App will have different components: 
-- User(Login), Home, Postslist, Detailpage, Footer.
+- User(Login), Home, Postslist, Detailpage, About.
 ![ERG Diagram](https://github.com/Tiranoe/adventureTime/blob/main/assets/ERG%20Diagram.png?raw=true)
 
 # Milestones
 
 ## MVP
-- User see the list of posts that other people make in regarding to their experiences
+- User see the list of all the available post.
 - Users can click on each post to pull up detail page of the post.
 - User can create their own posts
 - User can Edit/Delete their own posts
-- User can favorite the posts to save them in their list (to look back upon them later)
+- User can Add Attraction to each location to add to the original post.
 - User can login/Signup to application
 
 
 ## Stretch Features
+- Search function by word in post's title (Completed)
 - Include a google map to display on the details page
 - Use a public API to add into the amount of displayed data
 - Mobile friendly design in CSS
-- Search function by word in post's title
 - User uploads pictures to their posts
