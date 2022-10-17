@@ -37,7 +37,7 @@ App will have different components:
 # Milestones
 
 ## MVP
-~~- User see the list of all the available post.
+~~ - User see the list of all the available post. ~~
 ~ -Users can click on each post to pull up detail page of the post.
 ~ - User can create their own posts
 ~ - User can Edit/Delete their own posts
