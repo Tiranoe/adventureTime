@@ -3,7 +3,7 @@
 Welcome to Adventure Time Application! Are you the one who despises having to search up unique, fun and adventurous experiences when looking into where you to want to travel? Well then, this app is just for you! This app has the community where users will be able to share their own experiences with their stories, pictures and locations of their trip. Other users will be able to save those stories to go traveling themselves later. 
 
 # Link to the deployed app
-(This is blank for now until the application is hosted)
+[Adventure Times](https://adventuretimes.herokuapp.com/)
 
 # Planning phase:
 ## Toolbox:
