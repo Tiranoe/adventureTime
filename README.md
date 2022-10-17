@@ -37,16 +37,16 @@ App will have different components:
 # Milestones
 
 ## MVP
-~~User see the list of all the available post.~~
-~~Users can click on each post to pull up detail page of the post.~~
-~~- User can create their own posts~~
-~~- User can Edit/Delete their own posts~~
-~ - User can Add Attraction to each location to add to the original post.
-~ - User can login/Signup to application
+- ~~User see the list of all the available post.~~
+- ~~Users can click on each post to pull up detail page of the post.~~
+- ~~User can create their own posts~~
+- ~~User can Edit/Delete their own posts~~
+- ~~User can Add Attraction to each location to add to the original post.~~
+- ~~User can login/Signup to application~~
 
 
 ## Stretch Features
-~~- Search function by word in post's title (Completed)
+- ~~Search function by word in post's title~~ (Completed)
 - Include a google map to display on the details page
 - Use a public API to add into the amount of displayed data
 - Mobile friendly design in CSS
